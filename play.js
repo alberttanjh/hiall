@@ -6,7 +6,7 @@ $(".link-lightbox").on("click", function() {
         e = '<div id="back-lightbox">',
         f = '<div id="background-close"></div>',
         g = '<div id="window">',
-        h = '<div id="ref"><a href="http://fmoviess.blogspot.com"><b>Powered by FullMovies</b></a>',
+        h = '<div id="ref"><a href="http://fmoviess.blogspot.com"><span style="color: black;"><b>Powered by FullMovies</b></span></a>',
         i = "</div></div></div></div>";
     if ($("body").append(g + f + e + d + c + b + h+i), $("#window").hide(), "youtube" == $(this).data("videosite")) var i = "https://www.youtube.com/embed/" + $(this).data("videoid") + "?autoplay=1";
     else if ("vimeo" == $(this).data("videosite")) var i = "https://player.vimeo.com/video/" + $(this).data("videoid") + "?autoplay=1";
